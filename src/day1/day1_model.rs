@@ -1,5 +1,4 @@
-// model types for Day1
-use regex::Regex;
+// model types for Day
 pub fn parse_calibration(line: &str) -> u32{
     let ascii : Vec<&u8> = line.as_bytes().iter().filter(|c| **c >= 0x30u8 && **c<= 0x39u8).collect();
     let val = (ascii[0]-0x30) as u32 * 10 +  (ascii[ascii.len()-1]-0x30) as u32;
