@@ -65,9 +65,9 @@ mod test{
     use crate::day4::day4_model::get_points;
     #[test]
     fn test_points() {
-        let winn = vec![1,2,3,4,5];
-        let my = vec![10,3,9,5,12,15,17];
-        let p = get_points(winn, my);
+        let winn = vec![1u32,2,3,4,5];
+        let my = vec![10u32,3,9,5,12,15,17];
+        let p = get_points(&winn, &my);
         assert_eq!(2,p);
     }
 }
