@@ -109,7 +109,6 @@ pub fn part2(input: &Vec<(Vec<PartNumber>,Vec<Symbol>)>) -> u32{
 
 #[cfg(test)]
 mod test{
-    use itertools::assert_equal;
     use crate::day3::day3_model::parse_line;
 
     #[test]
