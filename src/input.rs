@@ -11,10 +11,13 @@ pub fn parse_input_file<P>(file_name: &str, parser: &mut P) -> Result<()> where
     P: InputParser{
     let file = File::open(file_name).unwrap();
     let reader = BufReader::new(file);
-
+    let mut count = 0;
     for line in reader.lines() {
         parser.parse_line(&(line.unwrap()))?;
+        count += 1;
     };
+    parser.parse_line(&"".to_string());
+    println!("Lines in input {}",count);
     Ok(())
 }
 pub fn parse_input_string<P>(input: &String, parser: &mut P) -> Result<()> where
