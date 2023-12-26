@@ -16,7 +16,7 @@ pub fn parse_input_file<P>(file_name: &str, parser: &mut P) -> Result<()> where
         parser.parse_line(&(line.unwrap()))?;
         count += 1;
     };
-    parser.parse_line(&"".to_string());
+    let _ = parser.parse_line(&"".to_string());
     println!("Lines in input {}",count);
     Ok(())
 }

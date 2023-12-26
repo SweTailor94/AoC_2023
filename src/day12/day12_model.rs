@@ -48,7 +48,6 @@ fn groups(v: & Vec<u32>) -> Vec<u32>{
         .filter_map(|(ge0, group)| if ge0 {Some(group.count() as u32)} else {None} ).collect()
 }
 
-const TOKENS: [char;2] = ['#', '.'];
 struct PatternGenerator {
     current:u32,
     size: u32,

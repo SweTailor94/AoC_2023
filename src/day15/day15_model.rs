@@ -1,5 +1,4 @@
 use std::hash::{Hash, Hasher};
-use linked_hash_set;
 
 // model types for Day15
 //Determine the ASCII code for the current character of the string.
@@ -22,7 +21,7 @@ pub struct Lens{
     focal_point: u8,
 }
 impl Lens {
-    fn new(l: String, fp:u8) -> Self{
+    fn _new(l: String, fp:u8) -> Self{
         Lens{
             label: l,
             focal_point: fp,

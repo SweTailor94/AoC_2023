@@ -1,6 +1,5 @@
 // model types for Day13
 
-use itertools::Itertools;
 use crate::input::InputParser;
 
 
@@ -161,7 +160,7 @@ impl InputParser for PatternParser{
             self.work_pattern = MirrorPattern::new();
             self.work_columns.clear();
         } else {
-            if (self.work_columns.len() == 0){
+            if self.work_columns.len() == 0 {
                 self.work_columns = vec![0u64;line.len()];
             }
             let mut line_val = 0u64;
