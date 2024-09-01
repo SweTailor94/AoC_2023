@@ -19,3 +19,7 @@ rayon = "1.8.0"
 regex = "1.10.2"
 reqwest = {version = "0.11.13", features = ["blocking"] }
 rustfft = "6.1.0"
+hex = "0.4.3"
+sorted-vec = "0.8.3"
+crossterm = "0.27.0"
+
